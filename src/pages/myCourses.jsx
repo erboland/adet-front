@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { Card, Button, Row } from "react-bootstrap";
+
+import { Card, Row } from "react-bootstrap";
 import "./mainTable.css";
 export default class MyCourses extends Component {
   constructor(props) {
