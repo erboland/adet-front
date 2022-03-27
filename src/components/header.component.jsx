@@ -1,10 +1,16 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/3.png";
 export default class Header extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-light fixed-top ">
         <div className="container">
+          <div>
+            <div className="logo">
+              <img src={logo} alt="logo" style={{ height: "3rem" }} />
+            </div>
+          </div>
           <Link
             className="navbar-brand navbar-color"
             to={"/sign-in"}
