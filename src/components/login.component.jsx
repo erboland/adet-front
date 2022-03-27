@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/3.png";
 export default class Login extends Component {
   render() {
     return (
       <div className="auth-wrapper">
         <div className="auth-inner">
           <form>
+            <img src={logo} alt="logo" />
             <h3>Sign In</h3>
             <div className="form-group">
               <label>Email address</label>

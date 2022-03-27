@@ -5,7 +5,7 @@ export default class Header extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-light fixed-top ">
-        <div className="container">
+        <div className="container nav-menu">
           <div>
             <div className="logo">
               <img src={logo} alt="logo" style={{ height: "3rem" }} />
@@ -14,7 +14,7 @@ export default class Header extends Component {
           <Link
             className="navbar-brand navbar-color"
             to={"/sign-in"}
-            style={{ color: "#d9deee" }}
+            style={{ color: "#d9deee", fontWeight: "bold" }}
             onClick={() => this.props.logOut()}
           >
             Adet
@@ -22,9 +22,9 @@ export default class Header extends Component {
           {!this.props.logged ? (
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul className="navbar-nav ml-auto">
-                <li className="nav-item">
+                <li className="nav-item hover-shadow">
                   <Link
-                    className="nav-link navbar-color"
+                    className="nav-link navbar-color "
                     to={"/sign-in"}
                     style={{ color: "#d9deee" }}
                   >
